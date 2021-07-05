@@ -1,4 +1,5 @@
 # Eltex
+---
 ## Статическая библиотека:
  > gcc file1.c -c 
  
@@ -11,7 +12,6 @@
  > ./test
 ---
 ## Динамическая библиотека:
----
  > gcc file1.c fPIC -c
    
  > gcc file2.c fPIC -c
@@ -21,6 +21,7 @@
  >  gcc test.c -o test -L. -lmyname
  
  >  LD_LIBRARY_PATH=$PWD ./test
+
 
 * GCC - https://man7.org/linux/man-pages/man1/gcc.1.html
 
