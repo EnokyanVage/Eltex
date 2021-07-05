@@ -1,11 +1,10 @@
 # Eltex
 ## Статическая библиотека:
----
-  gcc file1.c -c
-  gcc file2.c -c
-  ar rc libmyname.a file1.o file2.o
-  gcc test.c -o test -L -lmyname
-  ./test
+ > gcc file1.c -c
+ > gcc file2.c -c
+ > ar rc libmyname.a file1.o file2.o
+ > gcc test.c -o test -L -lmyname
+ > ./test
 ---
 ## Динамическая библиотека:
 ---
