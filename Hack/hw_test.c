@@ -29,4 +29,3 @@ int main(void)
     }
     fclose(output);
 }
-//16 байт 
