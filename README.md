@@ -1,11 +1,11 @@
 # Eltex
-Статическая библиотека:
-  gcc file1.c -c
-  gcc file2.c -c
-  ar rc libmyname.a file1.o file2.o
-  gcc test.c -o test -L -lmyname
-  ./test
-Динамическая библиотека:
+##Статическая библиотека:
+  _gcc file1.c -c
+  _gcc file2.c -c
+  _ar rc libmyname.a file1.o file2.o
+  _gcc test.c -o test -L -lmyname
+  _./test
+##Динамическая библиотека:
   gcc file1.c fPIC -c
   gcc file2.c fPIC -c
   gcc -shared file1.o file2.o -o libmyname.so
