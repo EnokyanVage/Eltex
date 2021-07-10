@@ -1,14 +1,8 @@
 #include "libmycalculator.h"
 
-void subtraction()
+int subtraction(int variable1, int variable2)
 {
-    calculator.variable1;
-    calculator.variable2;
-    calculator.answer;
-    printf("variable 1:");
-    scanf("%d",&calculator.variable1);
-    printf("variable 1:");
-    scanf("%d",&calculator.variable2);
-    calculator.answer = calculator.variable1 - calculator.variable2;
-    printf("Answer = %d\n",calculator.answer);  
+    int answer = 0;
+    answer = variable1 - variable2;
+    return answer; 
 }
