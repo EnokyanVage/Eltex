@@ -3,7 +3,19 @@
 int id_user = 0;
 void add_user()
 {   
+
     if(id_user < N){
+
+        if(users == 0) 
+        {users = (struct phonebook*) malloc(sizeof(struct phonebook));}
+        else { 
+            users = (struct phonebook*) realloc(users,(id_user + 1) * sizeof(struct phonebook));
+        }
+        if(users == 0)
+        {
+            perror("Out of memory!\n");
+            exit(EXIT_FAILURE);
+        }
         char name[20];
         char surname[20];
         char number[12];
@@ -16,13 +28,6 @@ void add_user()
         printf("Number phone: ");
         scanf("%s",number);
         printf("\n");
-
-        users = (struct phonebook*) malloc(sizeof(struct phonebook));
-        if(users < 0)
-        {
-            perror("Out of memory!\n");
-            exit(EXIT_FAILURE);
-        }
 
         strcpy(users[id_user].name, name);
         strcpy(users[id_user].surname, surname);
