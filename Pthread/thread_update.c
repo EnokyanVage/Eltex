@@ -11,9 +11,11 @@ void *func(void *args)
 
     for(i = 0; i < 1000; i++)
     {
+        pthread_mutex_lock(&A);
         tmp = a;
         tmp ++;
         a = tmp;
+        pthread_mutex_unlock(&A);
     }
 }
 int main(void)
